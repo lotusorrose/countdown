@@ -76,7 +76,7 @@
     function shareWhatsApp(date) {
         const url = window.location.origin + window.location.pathname + "?date=" + date;
         const message = `Countdown to ${date}: ${url}`;
-        const whatsappUrl = `https://web.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, "_blank");
     }
 
